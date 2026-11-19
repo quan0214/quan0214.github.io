@@ -28,7 +28,6 @@
         font-size: 11pt;
       }
       .no-print { display: none !important; }
-      .print-only { display: block !important; }
       .tech-card {
         background-color: #FFFFFF !important;
         border: 1px solid #CBD5E1 !important;
@@ -49,7 +48,6 @@
 </head>
 <body class="antialiased selection:bg-sky-500/30 selection:text-sky-200">
 
-  <!-- 頂部導覽列 -->
   <header class="no-print sticky top-0 z-40 border-b border-slate-800/80 bg-[#0B0F19]/90 backdrop-blur-md">
     <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
       <a href="#" class="text-lg font-bold tracking-tight text-white">
@@ -74,4 +72,273 @@
 
   <main class="mx-auto max-w-5xl space-y-12 px-6 py-12">
 
-    <!-- 1. Hero 首屏個人名片
+    <section id="about" class="tech-card rounded-2xl p-8">
+      <div class="flex flex-col items-start gap-6 md:flex-row md:items-center">
+        <img src="avatar.jpg" alt="何家銓" onerror="this.style.display='none'"
+             class="h-28 w-28 shrink-0 rounded-2xl border-2 border-sky-400/50 object-cover shadow-lg" />
+        <div class="flex-1 space-y-3">
+          <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-400">
+            國立虎尾科技大學 精密機械工程科 (111 - 現在)
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">何家銓</h1>
+            <p class="mt-1 text-base font-medium text-sky-400">CHIA-CHUAN (Jimmy) HO</p>
+          </div>
+          <p class="text-sm font-medium text-slate-300">
+            精密機械機構設計 × 嵌入式系統與 TinyML 應用 × Python 量化自動化開發
+          </p>
+          <p class="leading-relaxed text-slate-400">
+            具備紮實的機械製圖與機構設計基礎，熟悉運用 SolidWorks (3D)、AutoCAD、ANSYS 進行建模分析，並結合 Arduino / ESP32 進行軟硬體系統開發。性格沉穩、有責任心，遇到新事物會積極學習，遇到困難也不會卻步，盡全力克服與解決問題。
+          </p>
+          <div class="flex flex-wrap gap-3 pt-2 text-xs text-slate-300">
+            <a href="mailto:adrt53214@gmail.com" class="rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1.5 hover:border-sky-400">
+              📧 adrt53214@gmail.com
+            </a>
+            <span class="rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1.5">
+              📱 (+886) 0972278508
+            </span>
+            <a href="https://github.com/quan0214" target="_blank" class="rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1.5 hover:border-sky-400">
+              💻 github.com/quan0214
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="no-print rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1.5 hover:border-sky-400">
+              🔗 LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="space-y-6">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-white">精選專案與研發成果</h2>
+        <span class="text-xs text-slate-400">點擊右下角可檢視系統架構圖</span>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2">
+        <article class="tech-card flex flex-col justify-between rounded-2xl p-6">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-2">
+              <span class="rounded-md bg-sky-500/15 px-2.5 py-1 text-xs font-semibold text-sky-400">畢業專題 / 專利與國際研討會</span>
+              <span class="text-xs text-slate-400">軟硬體整合</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">智慧拘束型手套 (AI 醫療預警系統)</h3>
+            <img src="glove.jpg" alt="智慧拘束型手套實體照" onerror="this.style.display='none'"
+                 class="h-44 w-full rounded-xl border border-slate-800 object-cover" />
+            <p class="text-sm leading-relaxed text-slate-400">
+              專為臨床與長照防拔管需求設計之穿戴式醫工裝置。個人主要負責 <strong class="text-slate-200">SolidWorks 3D 機構設計、3D 列印製作與電路焊接整合</strong>，結合 ESP32 與 MPU6050 六軸感測器部署輕量化 TinyML 模型進行即時手勢異常辨識。
+            </p>
+            <div class="grid grid-cols-2 gap-2 rounded-xl border border-slate-800 bg-slate-900/70 p-3 text-center">
+              <div>
+                <div class="text-lg font-bold text-sky-400">97.78%</div>
+                <div class="text-xs text-slate-400">手勢動作分類準確率</div>
+              </div>
+              <div>
+                <div class="text-lg font-bold text-sky-400">99.74%</div>
+                <div class="text-xs text-slate-400">拔管風險偵測精準度</div>
+              </div>
+            </div>
+            <ul class="space-y-1 text-xs text-slate-300">
+              <li>• <strong class="text-sky-400">專利認證：</strong>中華民國專利已正式公告（字號：待補上正式專利號）</li>
+              <li>• <strong class="text-sky-400">學術發表：</strong>ICEIB 國際研討會論文發表、全國醫學工程醫療創意競賽參賽</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+            <div class="flex flex-wrap gap-1.5 text-xs text-slate-400">
+              <span class="rounded bg-slate-800 px-2 py-0.5">SolidWorks</span>
+              <span class="rounded bg-slate-800 px-2 py-0.5">ESP32</span>
+              <span class="rounded bg-slate-800 px-2 py-0.5">MPU6050</span>
+              <span class="rounded bg-slate-800 px-2 py-0.5">TinyML</span>
+            </div>
+            <button onclick="openModal('gloveModal')" class="no-print text-xs font-semibold text-sky-400 hover:underline">
+              系統架構圖 →
+            </button>
+          </div>
+        </article>
+
+        <article class="tech-card flex flex-col justify-between rounded-2xl p-6">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-2">
+              <span class="rounded-md bg-emerald-500/15 px-2.5 py-1 text-xs font-semibold text-emerald-400">自動化與量化系統</span>
+              <span class="text-xs text-slate-400">Python / CI/CD</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">多市場技術指標即時掃描雷達</h3>
+            <p class="text-sm leading-relaxed text-slate-400">
+              針對加密貨幣與台股市場開發之自動化監控腳本（<code class="text-sky-400">crypto-vegas-radar</code>），整合維加斯通道（EMA 144/169/576/676）與價格失衡區（FVG）演算法，透過雲端排程全天候篩選符合多空回踩條件之標的。
+            </p>
+            <div class="space-y-2 rounded-xl border border-slate-800 bg-slate-900/70 p-4 text-xs text-slate-300">
+              <div class="font-semibold text-white">核心技術亮點：</div>
+              <p>• 多執行緒非同步抓取行情數據，大幅縮短全市場掃描耗時。</p>
+              <p>• 串接 GitHub Actions 定時自動執行，零主機維護成本。</p>
+              <p>• 觸發訊號即時透過 Discord Webhook 推播並附帶互動看盤連結，另建置 Streamlit 視覺化儀表板。</p>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+            <div class="flex flex-wrap gap-1.5 text-xs text-slate-400">
+              <span class="rounded bg-slate-800 px-2 py-0.5">Python</span>
+              <span class="rounded bg-slate-800 px-2 py-0.5">GitHub Actions</span>
+              <span class="rounded bg-slate-800 px-2 py-0.5">Streamlit</span>
+            </div>
+            <button onclick="openModal('radarModal')" class="no-print text-xs font-semibold text-sky-400 hover:underline">
+              運作流程圖 →
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="tech-card rounded-2xl p-8 space-y-6">
+      <h2 class="text-2xl font-bold text-white">專業技能與技術士證照</h2>
+      <div class="grid gap-6 sm:grid-cols-3">
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-sky-400">國家技術士證照</h3>
+          <ul class="space-y-2 text-sm text-slate-200">
+            <li class="flex items-center gap-2 rounded-lg border border-slate-800 bg-slate-900/60 px-3 py-2">
+              <span class="text-sky-400">✔</span> SolidWorks（丙級）
+            </li>
+            <li class="flex items-center gap-2 rounded-lg border border-slate-800 bg-slate-900/60 px-3 py-2">
+              <span class="text-sky-400">✔</span> 機械加工（丙級）
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-sky-400">機械設計與製造工具</h3>
+          <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-300">
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">SolidWorks (3D 建模)</span>
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">AutoCAD</span>
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">ANSYS 工程分析</span>
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">CNC 數控加工</span>
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">PLC 可程式控制</span>
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">3D 列印機構打樣</span>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-sky-400">嵌入式與程式開發</h3>
+          <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-300">
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">Arduino / ESP32</span>
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">電路焊接與感測器整合</span>
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">Python (pandas / Streamlit)</span>
+            <span class="rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5">XQ XS 量化腳本</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="tech-card rounded-2xl p-8 space-y-6">
+      <h2 class="text-2xl font-bold text-white">工讀與校內外活動經歷</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="space-y-4">
+          <h3 class="text-base font-semibold text-sky-400">工作與實務歷練</h3>
+          <div class="border-l-2 border-sky-500/50 pl-4 space-y-1">
+            <div class="text-xs text-slate-400">2024/06 - 至今</div>
+            <div class="font-semibold text-white">卡璐佶咖啡館 — 工讀人員</div>
+            <p class="text-sm text-slate-400">培養團隊協作、現場應變與高壓環境下的穩定執行力。</p>
+          </div>
+          <div class="border-l-2 border-slate-700 pl-4 space-y-1">
+            <div class="text-xs text-slate-400">111 學年度 - 現在</div>
+            <div class="font-semibold text-white">國立虎尾科技大學 — 精密機械工程科</div>
+            <p class="text-sm text-slate-400">修習機械設計、製造加工、電控與專題實務製作。</p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-base font-semibold text-sky-400">科普推廣與競賽活動</h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="rounded-lg border border-slate-800 bg-slate-900/50 p-3">
+              <span class="font-semibold text-white">國科會 - 2023 台灣環島科普列車</span>
+              <p class="mt-0.5 text-xs text-slate-400">參與科學原理實作演示與民眾科普教育推廣。</p>
+            </li>
+            <li class="rounded-lg border border-slate-800 bg-slate-900/50 p-3">
+              <span class="font-semibold text-white">國科會 - 2022 台灣環島科普列車</span>
+              <p class="mt-0.5 text-xs text-slate-400">協助科學實驗教具操作與現場解說引導。</p>
+            </li>
+            <li class="rounded-lg border border-slate-800 bg-slate-900/50 p-3">
+              <span class="font-semibold text-white">2022 雲林 GO 科技創意賽恩思（攤主）</span>
+              <p class="mt-0.5 text-xs text-slate-400">擔任科學闖關攤位負責人，向學生與民眾解說機械與科學原理。</p>
+            </li>
+            <li class="rounded-lg border border-slate-800 bg-slate-900/50 p-3">
+              <span class="font-semibold text-white">2022 當 Foumosa 遇見 Formosa @ 台塑科學宅急便（關主）</span>
+              <p class="mt-0.5 text-xs text-slate-400">設計並主持科學體驗關卡，訓練公開表達與溝通協調能力。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="no-print border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+    © 2026 何家銓 CHIA-CHUAN (Jimmy) HO. Built with HTML & Tailwind CSS on GitHub Pages.
+  </footer>
+
+  <div id="gloveModal" class="no-print fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
+    <div class="w-full max-w-2xl rounded-2xl border border-slate-700 bg-[#111827] p-6 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h3 class="text-lg font-bold text-white">智慧拘束型手套 — 軟硬體系統架構</h3>
+        <button onclick="closeModal('gloveModal')" class="text-slate-400 hover:text-white">✕ 關閉</button>
+      </div>
+      <div class="py-6">
+        <svg viewBox="0 0 640 200" class="w-full rounded-xl border border-slate-800 bg-[#0B0F19] p-4">
+          <rect x="20" y="55" width="130" height="90" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+          <text x="85" y="92" fill="#F8FAFC" font-size="13" font-weight="bold" text-anchor="middle">穿戴機構與感測</text>
+          <text x="85" y="114" fill="#94A3B8" font-size="11" text-anchor="middle">3D列印蜂巢外殼</text>
+          <text x="85" y="130" fill="#38BDF8" font-size="11" text-anchor="middle">MPU6050 6軸IMU</text>
+          <line x1="150" y1="100" x2="195" y2="100" stroke="#38BDF8" stroke-width="2"/>
+          <rect x="195" y="55" width="145" height="90" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+          <text x="267" y="92" fill="#F8FAFC" font-size="13" font-weight="bold" text-anchor="middle">邊緣運算核心</text>
+          <text x="267" y="114" fill="#94A3B8" font-size="11" text-anchor="middle">ESP32 微控制器</text>
+          <text x="267" y="130" fill="#38BDF8" font-size="11" text-anchor="middle">TinyML CNN-LSTM</text>
+          <line x1="340" y1="100" x2="385" y2="100" stroke="#38BDF8" stroke-width="2"/>
+          <rect x="385" y="55" width="115" height="90" rx="10" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+          <text x="442" y="92" fill="#F8FAFC" font-size="13" font-weight="bold" text-anchor="middle">即時風險判別</text>
+          <text x="442" y="114" fill="#10B981" font-size="11" text-anchor="middle">準確率 97.78%</text>
+          <text x="442" y="130" fill="#10B981" font-size="11" text-anchor="middle">精準度 99.74%</text>
+          <line x1="500" y1="100" x2="530" y2="100" stroke="#10B981" stroke-width="2"/>
+          <rect x="530" y="55" width="90" height="90" rx="10" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+          <text x="575" y="95" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">護理端預警</text>
+          <text x="575" y="118" fill="#FBBF24" font-size="11" text-anchor="middle">異常拔管通報</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="radarModal" class="no-print fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
+    <div class="w-full max-w-2xl rounded-2xl border border-slate-700 bg-[#111827] p-6 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h3 class="text-lg font-bold text-white">自動化市場掃描雷達 — 系統運作流程</h3>
+        <button onclick="closeModal('radarModal')" class="text-slate-400 hover:text-white">✕ 關閉</button>
+      </div>
+      <div class="py-6">
+        <svg viewBox="0 0 640 200" class="w-full rounded-xl border border-slate-800 bg-[#0B0F19] p-4">
+          <rect x="20" y="55" width="135" height="90" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+          <text x="87" y="92" fill="#F8FAFC" font-size="13" font-weight="bold" text-anchor="middle">雲端排程觸發</text>
+          <text x="87" y="115" fill="#38BDF8" font-size="11" text-anchor="middle">GitHub Actions</text>
+          <text x="87" y="132" fill="#94A3B8" font-size="11" text-anchor="middle">24/7 全自動執行</text>
+          <line x1="155" y1="100" x2="205" y2="100" stroke="#38BDF8" stroke-width="2"/>
+          <rect x="205" y="55" width="175" height="90" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+          <text x="292" y="92" fill="#F8FAFC" font-size="13" font-weight="bold" text-anchor="middle">Python 量化指標運算</text>
+          <text x="292" y="115" fill="#94A3B8" font-size="11" text-anchor="middle">維加斯通道 EMA 144~676</text>
+          <text x="292" y="132" fill="#38BDF8" font-size="11" text-anchor="middle">FVG 價格失衡區過濾</text>
+          <line x1="380" y1="100" x2="430" y2="100" stroke="#10B981" stroke-width="2"/>
+          <rect x="430" y="55" width="185" height="90" rx="10" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+          <text x="522" y="92" fill="#F8FAFC" font-size="13" font-weight="bold" text-anchor="middle">即時通知與視覺化</text>
+          <text x="522" y="115" fill="#10B981" font-size="11" text-anchor="middle">Discord Webhook 推播</text>
+          <text x="522" y="132" fill="#94A3B8" font-size="11" text-anchor="middle">Streamlit 互動儀表板</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      const el = document.getElementById(id);
+      el.classList.remove('hidden');
+      el.classList.add('flex');
+    }
+    function closeModal(id) {
+      const el = document.getElementById(id);
+      el.classList.add('hidden');
+      el.classList.remove('flex');
+    }
+  </script>
+</body>
+</html>
