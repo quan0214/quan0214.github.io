@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>何家銓 CHIA-CHUAN (Jimmy) HO | 個人履歷網站</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    body {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      background-color: #0B0F19;
+      color: #E2E8F0;
+    }
+    .tech-card {
+      background-color: #111827;
+      border: 1px solid #1E293B;
+      transition: all 0.25s ease;
+    }
+    .tech-card:hover {
+      border-color: #38BDF8;
+      box-shadow: 0 0 24px rgba(56, 189, 248, 0.12);
+    }
+    @media print {
+      body {
+        background-color: #FFFFFF !important;
+        color: #0F172A !important;
+        font-size: 11pt;
+      }
+      .no-print { display: none !important; }
+      .print-only { display: block !important; }
+      .tech-card {
+        background-color: #FFFFFF !important;
+        border: 1px solid #CBD5E1 !important;
+        box-shadow: none !important;
+        color: #0F172A !important;
+        break-inside: avoid;
+      }
+      .text-slate-100, .text-slate-200, .text-slate-300, .text-white { color: #0F172A !important; }
+      .text-slate-400 { color: #475569 !important; }
+      .text-sky-400 { color: #0369A1 !important; }
+      .bg-slate-800, .bg-slate-900, .bg-sky-500\/10 {
+        background-color: #F1F5F9 !important;
+        border-color: #CBD5E1 !important;
+      }
+      main { padding-top: 0 !important; }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-sky-500/30 selection:text-sky-200">
 
+  <!-- 頂部導覽列 -->
+  <header class="no-print sticky top-0 z-40 border-b border-slate-800/80 bg-[#0B0F19]/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+      <a href="#" class="text-lg font-bold tracking-tight text-white">
+        Jimmy Ho <span class="text-sky-400">.dev</span>
+      </a>
+      <nav class="hidden gap-6 text-sm font-medium text-slate-400 md:flex">
+        <a href="#about" class="hover:text-sky-400">個人簡介</a>
+        <a href="#projects" class="hover:text-sky-400">精選專案</a>
+        <a href="#skills" class="hover:text-sky-400">技能與證照</a>
+        <a href="#experience" class="hover:text-sky-400">經歷與活動</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/quan0214" target="_blank" class="rounded-lg border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 hover:border-sky-400 hover:text-sky-400">
+          GitHub
+        </a>
+        <button onclick="window.print()" class="rounded-lg bg-sky-500 px-4 py-1.5 text-sm font-semibold text-slate-950 hover:bg-sky-400">
+          下載 PDF 履歷
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-5xl space-y-12 px-6 py-12">
+
+    <!-- 1. Hero 首屏個人名片
